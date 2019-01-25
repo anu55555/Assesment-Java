@@ -1,0 +1,19 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class Treasure {
+  
+	public static int positions() 
+	{
+		Scanner command = new Scanner(System.in);
+		int R1=0;
+		Random coord = new Random();
+		int coordX = coord.nextInt(9)+1;
+		int coordY = coord.nextInt(9)+1;
+		int Plcoord =5;
+		System.out.println("");
+		return R1;
+	}
+
+
+}

@@ -1,0 +1,15 @@
+import java.util.Random;
+
+public class Treasure {
+  
+	public static int findtreasure() 
+	{
+		int R1=0;
+		Random coord = new Random();
+		int coordX = coord.nextInt(9)+1;
+		int coordY = coord.nextInt(9)+1;
+		return R1;
+	}
+
+
+}

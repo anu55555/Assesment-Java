@@ -1,0 +1,24 @@
+
+public class Player {
+
+	
+   public static String Role(int i) 
+   {
+	    String R1;
+	    int Role=0;
+	    switch (Role) {
+	    case 1:
+	    	R1= "Walker";
+	    	break;
+	    case 2:
+	    	R1= "Runner";
+	    	break;
+	    case 3:
+	    	R1= "Jumper";
+	    	break;
+		default:
+			R1="You have selected Invalid Role";
+	}
+	 return R1;
+   }
+}

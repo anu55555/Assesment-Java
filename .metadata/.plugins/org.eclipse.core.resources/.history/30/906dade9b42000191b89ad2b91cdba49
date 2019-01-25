@@ -1,0 +1,50 @@
+import java.util.Random;
+import java.util.Scanner;
+public class Treasure
+{
+  public static void game() 
+     {
+		         Scanner command = new Scanner(System.in);
+		         Random coord = new Random();
+		         int coordX = coord.nextInt(10);
+		         int coordY = coord.nextInt(10);
+		         int plX =5;
+		         int plY=5;
+		         int X;
+		         int Y;
+		         float distance;
+		         System.out.println(" You are in middle of grey swamp which is infinite and dreary, Try going North,South,East or West");
+		         while(plX != coordX && plY != coordY) 
+		             {  
+			            String direction = command.next();
+			                   switch (direction)                                                              
+			                   {
+			                    case "North":
+				                plY++;
+				                System.out.println("Enter your next Command");
+				                break;
+			                    case "South":
+				                plY--;
+				                System.out.println("Enter your next Command");
+				                break;
+			                    case "East":
+				                plX--;
+				                System.out.println("Enter your next Command");
+				                break;
+			                    case "West":
+				                plX++;
+				                System.out.println("Enter your next Command");
+				                break;
+			                    }
+			                    X= coordX - plX;
+					            Y = coordY -plY;
+					            distance = (float) Math.sqrt(X*X+Y*Y);
+					            System.out.println("The dial reads" + distance +"m");
+					           
+			              }
+		         System.out.println("You see a box sitting on the plain. Its filled with treasure! You win!"); 
+               
+		    }
+	    
+     }
+

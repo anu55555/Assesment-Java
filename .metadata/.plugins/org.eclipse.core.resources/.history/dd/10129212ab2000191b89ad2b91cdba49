@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class main 
+{
+    
+	public static void main(String[] args)
+   {
+		int R = 0;
+		System.out.println("Enter Your Name ");
+		Scanner playername  = new Scanner(System.in);
+		String P1 = playername.nextLine();
+		if(P1.equals("Exit"))
+		{
+			System.out.println("Thank You" );
+	    }
+		else 
+		{
+		     System.out.println("Hello  " + P1 + " You are in  in the middle of an infinite grey swamp");
+		     System.out.println( P1 + " ,please Choose Your Role");
+		     String Output = Player.Role();
+		}
+	}
+
+}

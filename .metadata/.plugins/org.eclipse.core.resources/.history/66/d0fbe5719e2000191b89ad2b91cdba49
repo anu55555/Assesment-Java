@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Player 
+{
+   public static String Role(int i) 
+   {
+	   Scanner playerRole  = new Scanner(System.in);
+	   String R1 = playerRole.nextLine();
+	   switch (R1) 
+	 {
+	    case 1:
+	    	R1= "Walker";
+	    	break;
+	    case 2:
+	    	R1= "Runner";
+	    	break;
+	    case 3:
+	    	R1= "Jumper";
+	    	break;
+		default:
+			R1="You have selected Invalid Role";
+	}
+	 return R1;
+   }
+}

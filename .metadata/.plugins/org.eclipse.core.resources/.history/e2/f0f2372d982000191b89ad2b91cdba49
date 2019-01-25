@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Player {
+ String P1;
+	public class PlayerRoles{ 
+		 System.out.println("Enter Your Name ");
+	public void Player() {
+	 do 
+	 {
+		 Scanner playername  = new Scanner(System.in);
+	     P1 = playername.nextLine();
+	     System.out.println("Hello  " + P1 + " You are in  in the middle of an infinite grey swamp");
+	     System.out.println( P1 + " ,please Choose Your Role");
+	} while (P1.equals("Exit"));
+		
+	}
+   
+}
+}
